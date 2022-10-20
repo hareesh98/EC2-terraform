@@ -7,11 +7,6 @@ variable "secret_access_key" {
   description = "aws secret access key"
   type        = string
 }
-variable "key_pair" {
-  description = "pemkey_file"
-  type        = string
-}
-
 variable "region" {
   description = "aws region"
   type        = string
