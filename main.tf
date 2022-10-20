@@ -1,9 +1,4 @@
-resource "aws_key_pair" "terraform" {
-  key_name   = "a"
-  public_key = "${file("${path.module}/a.pub")}"
-}
-
-resource "aws_instance" "test_server" {
+resource "aws_instance" "MYJENKINSSERVER" {
   ami           = var.ami 
   instance_type = var.instance_type
   associate_public_ip_address = var.associate_public_ip_address
