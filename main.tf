@@ -5,7 +5,6 @@ resource "aws_instance" "MYJENKINSSERVER" {
   monitoring = var.monitoring
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id = var.subnet_id
-  key_name = aws_key_pair.a.key_name
   tags = var.tags
   timeouts {
     create = "60m"
