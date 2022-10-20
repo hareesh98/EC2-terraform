@@ -1,6 +1,6 @@
 resource "aws_key_pair" "terraform" {
   key_name   = "terraform"
-  public_key = "${file("${path.module}/terraform.pub")}"
+  public_key = "${file("${path.module}/a.pub")}"
 }
 
 resource "aws_instance" "test_server" {
@@ -10,7 +10,7 @@ resource "aws_instance" "test_server" {
   monitoring = var.monitoring
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id = var.subnet_id
-  key_name = aws_key_pair.terraform.key_name
+  key_name = aws_key_pair.a.key_name
   tags = var.tags
   timeouts {
     create = "60m"
