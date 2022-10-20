@@ -1,5 +1,5 @@
 resource "aws_key_pair" "terraform" {
-  key_name   = "terraform"
+  key_name   = "a"
   public_key = "${file("${path.module}/a.pub")}"
 }
 
