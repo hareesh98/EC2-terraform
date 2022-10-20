@@ -10,7 +10,6 @@ resource "aws_instance" "test_server" {
   monitoring = var.monitoring
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id = var.subnet_id
-  user_data = "${file("${path.module}/userdata.sh")}"
   key_name = aws_key_pair.terraform.key_name
   tags = var.tags
   timeouts {
