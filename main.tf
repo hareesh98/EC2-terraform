@@ -4,7 +4,7 @@ resource "aws_instance" "MYJENKINSSERVER" {
   associate_public_ip_address = var.associate_public_ip_address
   monitoring = var.monitoring
   vpc_security_group_ids = var.vpc_security_group_ids
-  count = 3
+  count = 2
   subnet_id = var.subnet_id
   tags = var.tags
   timeouts {
