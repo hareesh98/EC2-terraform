@@ -8,7 +8,7 @@ monitoring = true # enabling monitoring or not
 subnet_id = "subnet-0e7ac4d4254b91b9c" # Subnet id where you want to launch instance in
 vpc_security_group_ids = [ "sg-00a8ffc8f227829cd" ] # Security group to be attached to ec2 instance
 tags = {
-  "Name" = "newinstance"
+  "Name" = "testing@"
   "Env"  = "Dev"
 }
 
