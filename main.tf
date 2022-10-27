@@ -5,7 +5,6 @@ resource "aws_instance" "test_server" {
   monitoring = var.monitoring
   vpc_security_group_ids = var.vpc_security_group_ids
   subnet_id = var.subnet_id
-  count = 0
   tags = var.tags
   timeouts {
     create = "60m"
