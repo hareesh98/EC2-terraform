@@ -1,4 +1,4 @@
-resource "aws_instance" "myinstance" {
+resource "aws_instance" "A" {
   ami           = var.ami 
   instance_type = var.instance_type
   associate_public_ip_address = var.associate_public_ip_address
