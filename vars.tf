@@ -1,11 +1,11 @@
 variable "access_key" {
   description = "aws access key"
-  default = "AKIAXX4YXDWF7BH37J64"
+  type        = string
 }
 
 variable "secret_access_key" {
   description = "aws secret access key"
-  default = "mqf6oviS6RXUq6Uy63HVvNg+Ms9XUKjlzc7+/zAs"
+  type        = string
 }
 variable "region" {
   description = "aws region"
