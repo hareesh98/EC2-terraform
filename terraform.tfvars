@@ -8,7 +8,7 @@ monitoring = true # enabling monitoring or not
 subnet_id = "subnet-a99ba0c0"
 vpc_security_group_ids = [ "sg-07f0465eca79bcced" ] # Security group to be attached to ec2 instance
 tags = {
-  "Name" = "testing"
+  "Name" = "TERRAFORM-1"
   "Env"  = "Dev"
 }
 
