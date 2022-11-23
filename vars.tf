@@ -40,11 +40,6 @@ variable "vpc_security_group_ids" {
   type = list
 }
 
-variable "subnet_id" {
-  description = "subnet id"
-  type = string
-}
-
 variable "tags" {
   description =  "ec2 instance tags"
   type = map
