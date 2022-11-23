@@ -12,7 +12,10 @@ variable "region" {
   type        = string
   default     = "ap-south-1"
 }
-
+variable "subnet_id" {
+  description = "subnet id"
+  type = string
+}
 variable "instance_type" {
   description = "instance type"
   type        = string
