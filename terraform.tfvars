@@ -1,6 +1,6 @@
 access_key = "" # Access key
 secret_access_key = "" # Secret access key
-region = "us-east-1" # Region
+region = "ap-south-1" # Region
 instance_type = "t2.micro" # instance type
 ami = "ami-08c40ec9ead489470" # AMI ID
 associate_public_ip_address = true # Assigning public ip address
